@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity 36a2a31c09aea5bd</metadata>
-  <rect width="64" height="64" rx="8" fill="hsl(306 76% 33%)"/>
-  <path d="M34 0h30v64H20Z" fill="hsl(12 74% 75%)" opacity="0.82"/>
-  <g transform="rotate(199 32 32)" opacity="0.42"><path d="M14 43 32 13l18 30Z" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">HR</text>
+  <title>홍대 유흥 가이드</title>
+  <rect width="64" height="64" rx="15" fill="hsl(306 70% 29%)"/>
+  <path d="M64 0v26L38 0Z" fill="hsl(34 68% 67%)" opacity="0.16"/>
+  <g transform="rotate(270 32 32)"><rect x="15" y="15" width="28" height="28" rx="6" fill="none" stroke="hsl(306 24% 96%)" stroke-width="6"/><rect x="25" y="25" width="24" height="24" rx="6" fill="hsl(34 68% 67%)"/></g>
 </svg>
