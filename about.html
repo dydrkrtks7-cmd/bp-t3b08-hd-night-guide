@@ -1,317 +1,315 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-warm-grid">
-    <title>홍대 유흥 가이드 | 정보 — 진짜를 찾는 놈들을 위한 내비게이션</title>
-    <meta name="description" content="클럽, 바, 숨은 핫플. 홍대 밤문화를 지배하는 단 하나의 가이드. 정보는 무기다. 지금 바로 확인하라.">
-    <meta name="keywords" content="홍대 유흥, 홍대 유흥 가이드, 홍대 밤문화, 홍대 클럽, 홍대 술집, 홍대 핫플, 홍대 놀거리, 홍대 야경, 홍대 데이트, 홍대 정보">
-    <link rel="canonical" href="https://hongdae-review-choice.program-school.online/about.html">
-    <meta property="og:title" content="홍대 유흥 가이드 | 정보 — 진짜를 찾는 놈들을 위한 내비게이션">
-    <meta property="og:description" content="클럽, 바, 숨은 핫플. 홍대 밤문화를 지배하는 단 하나의 가이드. 정보는 무기다. 지금 바로 확인하라.">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: #faf7f2;
-            color: #1f1e1b;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        /* 스티키 네비게이션 */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(250, 247, 242, 0.92);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0,0,0,0.04);
-        }
-        .nav-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 68px;
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        .logo {
-            font-weight: 700;
-            font-size: 1.4rem;
-            letter-spacing: -0.02em;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #1f1e1b;
-            text-decoration: none;
-        }
-        .logo span {
-            background: #e54b2b;
-            color: #faf7f2;
-            font-size: 0.6rem;
-            font-weight: 800;
-            padding: 2px 8px;
-            border-radius: 40px;
-            letter-spacing: 0.02em;
-            margin-left: 4px;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .nav-links a {
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #1f1e1b;
-            padding: 6px 0;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s;
-        }
-        .nav-links a:hover {
-            border-bottom-color: #e54b2b;
-        }
-        .nav-cta {
-            background: #1f1e1b;
-            color: #faf7f2 !important;
-            padding: 8px 18px !important;
-            border-radius: 40px;
-            font-weight: 600;
-            border: none;
-            transition: background 0.2s;
-        }
-        .nav-cta:hover {
-            background: #e54b2b !important;
-            border-bottom-color: transparent !important;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 4px;
-        }
-        .hamburger span {
-            display: block;
-            width: 28px;
-            height: 2px;
-            background: #1f1e1b;
-            border-radius: 10px;
-            transition: 0.2s;
-        }
-        /* 히어로 */
-        .hero {
-            padding: 80px 0 60px;
-            border-bottom: 1px solid rgba(0,0,0,0.04);
-        }
-        .hero h1 {
-            font-size: 3.4rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            max-width: 800px;
-            margin-bottom: 20px;
-        }
-        .hero h1 em {
-            font-style: normal;
-            background: #e54b2b;
-            color: #faf7f2;
-            padding: 0 8px;
-            display: inline-block;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #4b4a47;
-            max-width: 640px;
-            font-weight: 400;
-        }
-        .grid-2col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px 32px;
-            padding: 60px 0;
-        }
-        .info-card {
-            background: #ffffffec;
-            border-radius: 20px;
-            padding: 32px 28px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
-            border: 1px solid #efebe6;
-            transition: 0.2s;
-        }
-        .info-card:hover {
-            border-color: #e54b2b40;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.04);
-        }
-        .info-card h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .info-card h3 span {
-            background: #1f1e1b;
-            color: #faf7f2;
-            font-size: 0.8rem;
-            padding: 0 10px;
-            border-radius: 30px;
-            font-weight: 600;
-        }
-        .info-card p {
-            color: #2b2a27;
-            margin-bottom: 12px;
-            font-weight: 400;
-        }
-        .info-card .meta-tag {
-            display: inline-block;
-            background: #e54b2b10;
-            color: #b43a1f;
-            font-size: 0.7rem;
-            font-weight: 600;
-            padding: 2px 12px;
-            border-radius: 30px;
-            letter-spacing: 0.02em;
-            border: 1px solid #e54b2b20;
-            margin-right: 6px;
-        }
-        .faq-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px 32px;
-            padding: 40px 0 80px;
-        }
-        .faq-item {
-            border-bottom: 1px solid #e2ddd6;
-            padding-bottom: 20px;
-        }
-        .faq-item strong {
-            display: block;
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 6px;
-        }
-        .faq-item p {
-            color: #4b4a47;
-            font-size: 0.95rem;
-        }
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            padding: 20px 0 10px;
-            border-top: 2px solid #1f1e1b;
-            display: inline-block;
-        }
-        .badge-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 12px;
-            margin: 16px 0 8px;
-        }
-        .badge-list span {
-            background: #1f1e1b0c;
-            padding: 4px 14px;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid #e2ddd6;
-        }
-        .tel-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #e54b2b;
-            color: #faf7f2 !important;
-            padding: 8px 20px;
-            border-radius: 60px;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: background 0.2s;
-            margin-top: 12px;
-        }
-        .tel-link:hover {
-            background: #c03d1f;
-        }
-        footer {
-            padding: 40px 0 60px;
-            border-top: 1px solid #e2ddd6;
-            color: #4b4a47;
-            font-size: 0.85rem;
-            text-align: center;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 68px;
-                left: 0;
-                width: 100%;
-                background: #faf7f2;
-                padding: 20px 24px 30px;
-                border-bottom: 1px solid #e2ddd6;
-                gap: 1.2rem;
-                align-items: flex-start;
-            }
-            .nav-links.open {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .hero h1 {
-                font-size: 2.4rem;
-            }
-            .grid-2col {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>홍대 유흥 가이드 | 정보 — 진짜를 찾는 놈들을 위한 내비게이션</title>
+ <meta name="description" content="클럽, 바, 숨은 핫플. 홍대 밤문화를 지배하는 단 하나의 가이드. 정보는 무기다. 지금 바로 확인하라.">
+ <meta name="keywords" content="홍대 유흥, 홍대 유흥 가이드, 홍대 밤문화, 홍대 클럽, 홍대 술집, 홍대 핫플, 홍대 놀거리, 홍대 야경, 홍대 데이트, 홍대 정보">
+ <link rel="canonical" href="https://hongdae-review-choice.program-school.online/about.html">
+ <meta property="og:title" content="홍대 유흥 가이드 | 정보 — 진짜를 찾는 놈들을 위한 내비게이션">
+ <meta property="og:description" content="클럽, 바, 숨은 핫플. 홍대 밤문화를 지배하는 단 하나의 가이드. 정보는 무기다. 지금 바로 확인하라.">
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ background: #faf7f2;
+ color: #1f1e1b;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+ .container {
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ /* 스티키 네비게이션 */
+ header {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background: rgba(250, 247, 242, 0.92);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(0,0,0,0.04);
+ }
+ .nav-inner {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 68px;
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ .logo {
+ font-weight: 700;
+ font-size: 1.4rem;
+ letter-spacing: -0.02em;
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ color: #1f1e1b;
+ text-decoration: none;
+ }
+ .logo span {
+ background: #e54b2b;
+ color: #faf7f2;
+ font-size: 0.6rem;
+ font-weight: 800;
+ padding: 2px 8px;
+ border-radius: 40px;
+ letter-spacing: 0.02em;
+ margin-left: 4px;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ .nav-links a {
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: #1f1e1b;
+ padding: 6px 0;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s;
+ }
+ .nav-links a:hover {
+ border-bottom-color: #e54b2b;
+ }
+ .nav-cta {
+ background: #1f1e1b;
+ color: #faf7f2 !important;
+ padding: 8px 18px !important;
+ border-radius: 40px;
+ font-weight: 600;
+ border: none;
+ transition: background 0.2s;
+ }
+ .nav-cta:hover {
+ background: #e54b2b !important;
+ border-bottom-color: transparent !important;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ background: transparent;
+ border: none;
+ cursor: pointer;
+ padding: 4px;
+ }
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 2px;
+ background: #1f1e1b;
+ border-radius: 10px;
+ transition: 0.2s;
+ }
+ /* 히어로 */
+ .hero {
+ padding: 80px 0 60px;
+ border-bottom: 1px solid rgba(0,0,0,0.04);
+ }
+ .hero h1 {
+ font-size: 3.4rem;
+ font-weight: 800;
+ letter-spacing: -0.03em;
+ line-height: 1.1;
+ max-width: 800px;
+ margin-bottom: 20px;
+ }
+ .hero h1 em {
+ font-style: normal;
+ background: #e54b2b;
+ color: #faf7f2;
+ padding: 0 8px;
+ display: inline-block;
+ }
+ .hero p {
+ font-size: 1.2rem;
+ color: #4b4a47;
+ max-width: 640px;
+ font-weight: 400;
+ }
+ .grid-2col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 40px 32px;
+ padding: 60px 0;
+ }
+ .info-card {
+ background: #ffffffec;
+ border-radius: 20px;
+ padding: 32px 28px;
+ box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+ border: 1px solid #efebe6;
+ transition: 0.2s;
+ }
+ .info-card:hover {
+ border-color: #e54b2b40;
+ box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+ }
+ .info-card h3 {
+ font-size: 1.6rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ margin-bottom: 12px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .info-card h3 span {
+ background: #1f1e1b;
+ color: #faf7f2;
+ font-size: 0.8rem;
+ padding: 0 10px;
+ border-radius: 30px;
+ font-weight: 600;
+ }
+ .info-card p {
+ color: #2b2a27;
+ margin-bottom: 12px;
+ font-weight: 400;
+ }
+ .info-card .meta-tag {
+ display: inline-block;
+ background: #e54b2b10;
+ color: #b43a1f;
+ font-size: 0.7rem;
+ font-weight: 600;
+ padding: 2px 12px;
+ border-radius: 30px;
+ letter-spacing: 0.02em;
+ border: 1px solid #e54b2b20;
+ margin-right: 6px;
+ }
+ .faq-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 24px 32px;
+ padding: 40px 0 80px;
+ }
+ .faq-item {
+ border-bottom: 1px solid #e2ddd6;
+ padding-bottom: 20px;
+ }
+ .faq-item strong {
+ display: block;
+ font-size: 1.1rem;
+ font-weight: 700;
+ margin-bottom: 6px;
+ }
+ .faq-item p {
+ color: #4b4a47;
+ font-size: 0.95rem;
+ }
+ .section-title {
+ font-size: 2rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ padding: 20px 0 10px;
+ border-top: 2px solid #1f1e1b;
+ display: inline-block;
+ }
+ .badge-list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px 12px;
+ margin: 16px 0 8px;
+ }
+ .badge-list span {
+ background: #1f1e1b0c;
+ padding: 4px 14px;
+ border-radius: 40px;
+ font-size: 0.8rem;
+ font-weight: 500;
+ border: 1px solid #e2ddd6;
+ }
+ .tel-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 6px;
+ background: #e54b2b;
+ color: #faf7f2 !important;
+ padding: 8px 20px;
+ border-radius: 60px;
+ font-weight: 600;
+ text-decoration: none;
+ font-size: 0.95rem;
+ transition: background 0.2s;
+ margin-top: 12px;
+ }
+ .tel-link:hover {
+ background: #c03d1f;
+ }
+ footer {
+ padding: 40px 0 60px;
+ border-top: 1px solid #e2ddd6;
+ color: #4b4a47;
+ font-size: 0.85rem;
+ text-align: center;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 68px;
+ left: 0;
+ width: 100%;
+ background: #faf7f2;
+ padding: 20px 24px 30px;
+ border-bottom: 1px solid #e2ddd6;
+ gap: 1.2rem;
+ align-items: flex-start;
+ }
+ .nav-links.open {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .hero h1 {
+ font-size: 2.4rem;
+ }
+ .grid-2col {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
+ .faq-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://hongdae-review-choice.program-school.online/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="nav-inner">
-            <a href="/" class="logo">홍대유흥<span>info</span></a>
-            <nav class="nav-links" id="mainNav">
-                <a href="/">홈</a>
-                <a href="/info" style="border-bottom-color: #e54b2b;">정보</a>
-                <a href="/guide">가이드</a>
-                <a href="/hotspots">핫플</a>
-                <a href="/contact" class="nav-cta">문의</a>
-            </nav>
-            <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+ <header>
+ <div class="nav-inner">
+ <a href="/" class="logo">홍대유흥<span>info</span></a>
+ <nav class="nav-links" id="mainNav">
+ <a href="/">홈</a>
+ <a href="/info" style="border-bottom-color: #e54b2b;">정보</a>
+ <a href="/guide">가이드</a>
+ <a href="/hotspots">핫플</a>
+ <a href="/contact" class="nav-cta">문의</a>
+ </nav>
+ <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </div>
+ </header>
 
 <main>
 <div class="container">
@@ -368,7 +366,7 @@
 <section class="hero">
 <h2 class="section-title">문의 안내</h2>
 <p>정확한 위치 안내와 예약 관련 문의는 아래 번호로 연락하면 된다.</p>
-<a href="tel:010-1234-5678" class="tel-link">010-1234-5678</a>
+
 </section>
 </div>
 </main>
